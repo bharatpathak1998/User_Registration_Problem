@@ -1,4 +1,4 @@
-package UC6_RULE2;
+package UC7_RULE3;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -8,7 +8,7 @@ public class UserRegistration {
 
     public static void userPassword(String password) {
 
-        Pattern pattern = Pattern.compile("[a-zA-Z]{8,20}");
+        Pattern pattern = Pattern.compile("[a-zA-Z0-9]{8,20}");
         Matcher matcher = pattern.matcher(password);
 
         if (matcher.find()) {
